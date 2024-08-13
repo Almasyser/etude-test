@@ -3,7 +3,27 @@
   z-index: 11;
   margin: 0;
   padding: 0;
-  background-color: $light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $extraLight;
   width: 100vw;
   height: 10vh;
+  
+}
+.icons-container{
+  display: flex;
+  justify-content: space-around;
+  width: 24vw;
+  height: 8vh;
+  a{
+    color: $primary;
+    height: 2rem;
+    font-size: 1.4rem;
+    :hover{
+      color: $alert;
+      scale: 1.02;
+      cursor: pointer;
+    }
+  }
 }

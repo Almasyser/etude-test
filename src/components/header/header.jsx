@@ -1,5 +1,5 @@
 import "./header.css";
-import logo from "../../assets/logo gris hot.png";
+import logo from "../../assets/logo color.png";
 function Header() {
   return(
     <section className="header-container">

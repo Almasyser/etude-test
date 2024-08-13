@@ -2,7 +2,27 @@
   z-index: 11;
   margin: 0;
   padding: 0;
-  background-color: #c6dafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeff;
   width: 100vw;
   height: 10vh;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  width: 24vw;
+  height: 8vh;
+}
+.icons-container a {
+  color: #0e59c2;
+  height: 2rem;
+  font-size: 1.4rem;
+}
+.icons-container a :hover {
+  color: #ff9800;
+  scale: 1.02;
+  cursor: pointer;
 }/*# sourceMappingURL=footer.css.map */
