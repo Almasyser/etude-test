@@ -1,0 +1,37 @@
+@import "../style/variables";
+.page-container{
+  margin: 5rem 0 0 0; 
+  padding: 0;
+  background-color: $extraLight;
+  width: 100vw;
+  height: max-content;
+  
+}
+.card{
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 6px $greyLight;
+  border-radius: 0.4rem;
+  img{
+    scale: 0.8;
+  }
+}
+.text-card{
+  list-style: none;
+  width: 60%;
+}
+.text-subtitle{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: $dark;
+}
+.text-comments{
+  font-style: italic;
+  margin: 0.2rem 0rem;
+}
+.text-tasks{
+  list-style: square;
+}

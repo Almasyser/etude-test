@@ -1,0 +1,9 @@
+@import "../style/variables";
+.footer-container{
+  z-index: 11;
+  margin: 0;
+  padding: 0;
+  background-color: $light;
+  width: 100vw;
+  height: 10vh;
+}

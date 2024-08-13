@@ -1,0 +1,57 @@
+[
+	{
+		"picture": "0",
+		"subtitle": "Nouvelle installation",
+		"comments": "Un chantier ne s'improvise pas. Il doit faire l'objet d'une préparation minutieuse.",
+		"tasks":[
+			{"data": "Une visite préalable peut être nécessaire pour étudier et proposer des solutions adaptées à vos besoins."},
+			{"data": "La visite permet notamment de définir les fonctionnalités et de choisir le matériel selon votre budget."},
+			{"data": "Installation traditionnelle. Domotique. Maison connectée"}
+			]
+	},
+	{
+		"picture": "1",
+		"subtitle": "Installation existante",
+		"comments": "une extension ou modification s'effectue sur une installation saine et conforme.",
+		"tasks": [
+			{"data":"Extension, modification"},
+			{"data":"Audit: sécurité, rendement energétique"},
+			{"data":"Mise aux normes"}
+			]
+	},
+	{
+		"picture": "2",
+		"subtitle": "Dépannage",
+		"comments": "Une panne peut être le signe de la dégradation d'une partie de l'installation et en compromettre la sécurité.",
+		"tasks": [
+			{"data":"Intervention rapide selon le degré d'urgence"},
+			{"data":"Mise en oeuvre de solutions palliatives"},
+			{"data":"La recherche de panne donne lieu à un rapport sur l'état général de l'installation examinée."},
+			{"data":"Ce rapport préliminaire peut, à votre demande, être complété par une étude plus détaillée qui mettra l'accent sur la sécurité et l'optimisation énergétique (hors climatisation)."}
+			]
+	},
+	{
+		"picture": "3",
+		"subtitle": "Audit",
+		"comments": "Un examen approfondi de l'installation peut faire émerger des solutions pour améliorer sa sécurité et son efficacité",
+		"tasks": [
+			{"data":"Sur une installation en fonctionnement"},
+			{"data":"Aspect sécurité: protections électriques, mécaniques, anomalies, échauffements.... État général de l'installation et des locaux"},
+			{"data":"Aspect technique: erreurs ce câblage, calibres excessifs ou inadaptés, circuits redondants ou inutiles"},
+			{"data":"Un rapport détaillé et une estimation du coût des travaux sont remis à l'issue de l'audit"},
+			{"data":"Un devis pour la rénovation partielle ou totale est remis sur demande"}
+			]
+	},
+	{
+		"picture": "4",
+		"subtitle": "Maintenance",
+		"comments": "La maintenance permet de surveiller l'état d'une installation au fil du temps. Grace au suivi régulier, il est possible d'établir une stratégie pour réduire autant que possible les coûts d'exploitation.",
+		"tasks": [
+			{"data":"Les visites de maintenance peuvent être ponctuelles ou périodiques."},
+			{"data":"Les visites lorsqu'elles sont périodiques (sur une année, avec une fréquence mensuelle, par exemple) permettent d'avoir un suivi de l'installation sur le long terme."},
+			{"data":"Elles portent essentiellement sur les fonctionnalités et la sécurité des équipements."},
+			{"data":"Elles peuvent comprendre des opérations telles que le relamping et le remplacement d'éléments défectueux."},
+			{"data":"A l'issue de chaque visite un rapport est remis à l'exploitant."}
+		]
+}
+]

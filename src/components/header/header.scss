@@ -1,0 +1,34 @@
+@import "../style/variables";
+.header-container{
+  position: fixed;
+  z-index: 10;
+  top: -1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: $extraLight;
+  width: 100vw;
+  height: 10vh;
+  box-shadow: 0 8px 8px -6px $_extraLight;
+}
+  .logo{
+    width: 64px;
+    height: 64px;
+    margin-left: 0.5rem;
+    padding: 0;
+    
+  }
+  .tel-container{
+    width: 10rem;
+    height: 2.6rem;
+    margin-right: 2rem;
+    background-color: $alert;
+    border-radius: 2rem;
+    color: $_extraLight;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+    line-height: 2.4rem;
+  }
