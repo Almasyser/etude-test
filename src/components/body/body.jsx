@@ -13,8 +13,19 @@ function PageHome() {
     imgAudit,
     imgMaint
   ]
-
+  const handleClick = (e) =>{
+    console.log(e);
+    
+  }
   return(
+    <>
+    <section className="btn-container">
+      <button type="radio" onClick={()=> handleClick(0)}>Installation nouvelle</button>
+      <button type="radio" onClick={()=> handleClick(1)}>Installation existante</button>
+      <button type="radio" onClick={()=> handleClick(2)}>Dépannage</button>
+      <button type="radio" onClick={()=> handleClick(3)}>Audit</button>
+      <button type="radio" onClick={()=> handleClick(4)}>Maintenance</button>
+    </section>
     <section className="page-container">
       {text_french.map((el)=>{
         return(
@@ -35,6 +46,7 @@ function PageHome() {
       })}
 
     </section>
+    </>
   )
 }
 export default PageHome;

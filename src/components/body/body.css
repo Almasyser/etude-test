@@ -1,3 +1,23 @@
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 2rem;
+  margin-top: 6rem;
+}
+.btn-container button {
+  width: 10rem;
+  border: none;
+  color: #0e59c2;
+  background-color: #c6dafc;
+  border-radius: 0.8rem;
+  font-weight: 700;
+}
+.btn-container button:hover {
+  background-color: #fce8c6;
+  cursor: pointer;
+}
+
 .page-container {
   margin: 5rem 0 0 0;
   padding: 0;
@@ -5,6 +25,10 @@
   width: 100vw;
   height: -moz-max-content;
   height: max-content;
+}
+
+.page-container-none {
+  display: none;
 }
 
 .card {
