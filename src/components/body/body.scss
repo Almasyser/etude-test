@@ -29,7 +29,13 @@
 .page-container-none{
   display: none;
 }
+.no-card{
+  visibility: hidden;
+  opacity: 0;
+}
 .card{
+  visibility: visible;
+  opacity: 1;
   width: 90%;
   margin: 1rem auto;
   display: flex;

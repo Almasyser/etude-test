@@ -1,6 +1,14 @@
 [
 	{
 		"picture": "0",
+		"subtitle": "",
+		"comments": "",
+		"tasks":[
+			{"data": ""}
+			]
+	},
+	{
+		"picture": "0",
 		"subtitle": "Nouvelle installation",
 		"comments": "Un chantier ne s'improvise pas. Il doit faire l'objet d'une préparation minutieuse.",
 		"tasks":[
