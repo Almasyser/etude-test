@@ -38,7 +38,7 @@
   animation-duration: 0.8s;
 }
 .noCard img {
-  scale: 0.8;
+  scale: 0.2;
 }
 .noCard .text-card {
   list-style: none;
@@ -59,18 +59,18 @@
 }
 @keyframes hide {
   from {
-    opacity: 1;
+    transform: translateX(0%);
   }
   to {
-    opacity: 0;
+    transform: translateX(-100%);
   }
 }
 @keyframes show {
   from {
-    opacity: 0;
+    transform: translateX(-100%);
   }
   to {
-    opacity: 1;
+    transform: translateX(0%);
   }
 }
 
@@ -87,7 +87,7 @@
   display: flex;
 }
 .card img {
-  scale: 0.8;
+  scale: 0.2;
 }
 .card .text-card {
   list-style: none;
@@ -108,17 +108,17 @@
 }
 @keyframes hide {
   from {
-    opacity: 1;
+    transform: translateX(0%);
   }
   to {
-    opacity: 0;
+    transform: translateX(-100%);
   }
 }
 @keyframes show {
   from {
-    opacity: 0;
+    transform: translateX(-100%);
   }
   to {
-    opacity: 1;
+    transform: translateX(0%);
   }
 }/*# sourceMappingURL=body.css.map */
