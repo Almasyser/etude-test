@@ -1,6 +1,6 @@
 // COLORS
 $primary: #0e59c2;
-$secondary: #74aaf5;
+$secondary: rgb(116, 170, 245);
 $light: #c6dafc;
 $extraLight: #eeeeff;
 $dark: #000033;
@@ -14,7 +14,7 @@ $grey: #555555;
 
 // COMPLEMENTAIRES
 $_primary: #c2770e;
-$_secondary: #f5b774;
+$_secondary: rgb(245, 183, 116);
 $_light: #fce8c6;
 $_extraLight: #ffffee;
 $_dark: #333300;
@@ -23,3 +23,5 @@ $_dark: #333300;
 $alert: #ff9800;
 $alertSoft: #ffcc50;
 $alertLight: #ffff89;
+
+$secondary_06: rgba(245,183,116,0.8);

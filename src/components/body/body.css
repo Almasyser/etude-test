@@ -2,33 +2,41 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 2rem;
+  height: 0.1vh;
   margin-top: 10rem;
 }
 .btn-container button {
-  width: 10rem;
+  width: 18vw;
+  height: 31.5vh;
   border: none;
-  color: #0e59c2;
+  color: rgb(116, 170, 245);
   background-color: #c6dafc;
-  border-radius: 0.8rem;
+  border-radius: 50%;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 .btn-container button:hover {
+  transition-property: background-color, color;
+  transition-duration: 0.6s;
   background-color: #fce8c6;
+  color: #0e59c2;
   cursor: pointer;
+}
+.btn-container button:focus {
+  background-color: #ffffee;
 }
 
 .page-container {
-  margin: 2rem 0 0 0;
+  margin: auto;
   padding: 0;
   background-color: #eeeeff;
   width: 100vw;
-  height: 38vh;
+  height: 40vh;
 }
 
 .noCard {
-  width: 80%;
-  margin: 1rem auto;
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 1px 1px 6px #cccccc;
@@ -38,7 +46,9 @@
   animation-duration: 0.8s;
 }
 .noCard img {
-  scale: 0.2;
+  scale: 0.8;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 .noCard .text-card {
   list-style: none;
@@ -75,8 +85,8 @@
 }
 
 .card {
-  width: 80%;
-  margin: 1rem auto;
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 1px 1px 6px #cccccc;
@@ -85,9 +95,12 @@
   animation-name: "show";
   animation-duration: 0.8s;
   display: flex;
+  background-color: rgba(245, 183, 116, 0.8);
 }
 .card img {
-  scale: 0.2;
+  scale: 0.8;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 .card .text-card {
   list-style: none;

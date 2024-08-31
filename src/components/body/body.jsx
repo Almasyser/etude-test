@@ -18,7 +18,9 @@ function PageHome() {
     imgMaint
   ]
   const handleShow = (e) =>{
-    handleHide();
+    if(visible){
+      
+    }
     setDot(e);
     setVisible(true);
   }
