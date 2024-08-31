@@ -5,25 +5,26 @@
   height: 0.1vh;
   margin-top: 10rem;
 }
+.btn-container .btn-img {
+  scale: 0.8;
+  position: absolute;
+  opacity: 0.2;
+}
+.btn-container .btn-img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.6s;
+}
 .btn-container button {
   width: 18vw;
   height: 31.5vh;
   border: none;
-  color: rgb(116, 170, 245);
-  background-color: #c6dafc;
+  color: #0e59c2;
+  background-color: rgba(116, 170, 245, 0.2);
   border-radius: 50%;
   font-size: 1.8rem;
-  font-weight: 700;
-}
-.btn-container button:hover {
-  transition-property: background-color, color;
-  transition-duration: 0.6s;
-  background-color: #fce8c6;
-  color: #0e59c2;
-  cursor: pointer;
-}
-.btn-container button:focus {
-  background-color: #ffffee;
+  font-weight: 600;
 }
 
 .page-container {
@@ -95,7 +96,7 @@
   animation-name: "show";
   animation-duration: 0.8s;
   display: flex;
-  background-color: rgba(245, 183, 116, 0.8);
+  background-color: rgba(116, 170, 245, 0.2);
 }
 .card img {
   scale: 0.8;

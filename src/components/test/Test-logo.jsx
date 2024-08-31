@@ -2,18 +2,11 @@
 import "./test.css";
 function Test(){
   const imageList = [
-    {name: "/logos/logo_home.png", dot: null},
     {name: "/logos/logo_danger.png", dot: null},
-    {name: "/logos/logo color.png", dot: null},
     {name: "/logos/logo_home_blue.png", dot: null},
-    {name: "/logos/logo_home_orange.png", dot: 1},
-    {name: "/logos/logo_light_black.png", dot: null},
+    {name: "/logos/logo_home_batir.png", dot: null},
     {name: "/logos/logo_light_blue.png", dot: null},
-    {name: "/logos/logo_light_orange.png", dot: 1},
-    {name: "/logos/logo_light_white.png", dot: null},
     {name: "/logos/logo_metrix_blue.png", dot: null},
-    {name: "/logos/logo_metrix_orange.png", dot: 1},
-    {name: "/logos/logo_metrix_white.png", dot: null}
   ];
  
   return(
