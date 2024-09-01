@@ -1,5 +1,6 @@
 import "./body.css";
 import text_french from "../../assets/text_french.json";
+import menu_prestations from "../../assets/menu_prestations.json";
 import imgNew from "../../assets/pict_new.jpg";
 import imgExist from "../../assets/pict_exist.jpg";
 import imgFix from "../../assets/pict-fix.jpg";
@@ -9,13 +10,6 @@ import { useState } from "react";
 function PageHome() {
   const [dot,setDot] = useState(null);
   const [visible, setVisible] = useState(false);
-  const imageList = [
-    {name: "/logos/logo_home_batir.png", dot: null},
-    {name: "/logos/logo_home_blue.png", dot: null},
-    {name: "/logos/logo_light_blue.png", dot: null},
-    {name: "/logos/logo_metrix_blue.png", dot: null},
-    {name: "/logos/logo_danger.png", dot: null},
-  ];
   const array = [
     imgNew,
     imgExist,
@@ -24,9 +18,6 @@ function PageHome() {
     imgMaint
   ]
   const handleShow = (e) =>{
-    if(visible){
-      
-    }
     setDot(e);
     setVisible(true);
   }
@@ -36,26 +27,16 @@ function PageHome() {
   return(
     <>
     <section className="btn-container">
-      <span className="btn-box">
-        <img className="btn-img" src={imageList[0].name} alt="##" />
-        <button type="radio" onClick={()=> handleShow(1)}>Installation nouvelle</button>
-      </span>
-      <span className="btn-box">
-        <img className="btn-img" src={imageList[1].name} alt="##" onClick={()=> handleShow(2)}/>
-        <button type="radio" >Installation existante</button>
-      </span>
-      <span className="btn-box">
-        <img className="btn-img" src={imageList[2].name} alt="##" />
-        <button type="radio" onClick={()=> handleShow(3)}>Dépannage</button>
-      </span>
-      <span className="btn-box">
-        <img className="btn-img" src={imageList[3].name} alt="##" />
-        <button type="radio" onClick={()=> handleShow(4)}>Audit</button>
-      </span>
-      <span className="btn-box">
-        <img className="btn-img" src={imageList[4].name} alt="##" />
-        <button type="radio" onClick={()=> handleShow(5)}>Maintenance</button>
-      </span>
+      {menu_prestations && menu_prestations.map((el,index)=>{
+        return(
+          <span key={index} className="btn-box">
+            <img className="btn-img" src={el.name} alt="##" onClick={()=> handleShow(index+1)}/>
+            <p>{el.label}</p>
+          </span>
+        )
+      }
+    )}
+
     </section>
     <section className="page-container">
       <span className={visible? "card":"noCard"} onClick={handleHide}>
