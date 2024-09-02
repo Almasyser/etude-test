@@ -23,7 +23,7 @@
       cursor: pointer;
     }
   }
-  p{
+  .btn-label{
     width: 180px;
     height: 120px;
     margin: 50% auto 0;
@@ -41,18 +41,61 @@
   width: 100vw;
   height: 40vh;
 }
-.noCard{
-  @include card-form;
-  @include animate-card("hide");
-}
+
 .card{
-  @include card-form;
   @include animate-card("show");
-  display: flex;
-  background-color: $secondary_06;
-  cursor: pointer;
-  
+  @include form-card(60%, 0);
+}
+.noCard{
+  @include animate-card("hide");
+  @include form-card(60%, 0);
+}
+
+
+@media screen and (max-width: 500px){
+  .btn-container{
+    margin-top: 5rem;
+    .btn-box{
+      align-items:first baseline;
+    }
+    .btn-img{
+      scale: 0.2;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.4s;
+      transition-property: opacity;
+      &:hover{
+        opacity: 0.3;
+        cursor: pointer;
+      }
+    }
+    .btn-label{
+      width: 90px;
+      height: 40px;
+      margin: 100% auto 0;
+      color: $_primary;
+      background-color: transparent;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-align: center;
+      padding-top: 72%;
+    }
   }
+  .page-container{
+    margin: auto; 
+    padding: 0;
+    background-color: $extraLight;
+    width: 100vw;
+    height: 100vh;
+  }
+  .card{
+    @include animate-card("show");
+    @include form-card(90%, 0.5rem);
+  }
+  .noCard{
+    @include animate-card("hide");
+    @include form-card(90%, 0.5rem);
+  }
+}
   
 
   

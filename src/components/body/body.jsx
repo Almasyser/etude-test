@@ -31,7 +31,7 @@ function PageHome() {
         return(
           <span key={index} className="btn-box">
             <img className="btn-img" src={el.name} alt="##" onClick={()=> handleShow(index+1)}/>
-            <p>{el.label}</p>
+            <p className="btn-label">{el.label}</p>
           </span>
         )
       }
@@ -45,11 +45,11 @@ function PageHome() {
         <img src={array[text_french[dot].picture]} alt="##" />
         <div className="text-card">
           <h1 className="text-subtitle">{text_french[dot].subtitle}</h1>
-          <p className="text-comments">{text_french[dot].comment}</p>
+          <p className="text-comments">{text_french[dot].comments}</p>
           {
             text_french[dot].tasks.map((el) =>{
               return(
-                <li key={el.data} className="text-tasks">{el.data}</li>
+                <li key={el.data} className={el.puce? "text-tasks-puce":"text-tasks"}>{el.data}</li>
               )
             })
           }

@@ -21,7 +21,7 @@
   opacity: 0.3;
   cursor: pointer;
 }
-.btn-container p {
+.btn-container .btn-label {
   width: 180px;
   height: 120px;
   margin: 50% auto 0;
@@ -40,38 +40,16 @@
   height: 40vh;
 }
 
-.noCard {
+.card {
+  animation: forwards;
+  animation-name: "show";
+  animation-duration: 0.8s;
+  background-color: #c6dafc;
+  cursor: pointer;
   width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 1px 1px 6px #cccccc;
-  border-radius: 0.4rem;
-  animation: forwards;
-  animation-name: "hide";
-  animation-duration: 0.8s;
-}
-.noCard img {
-  scale: 0.8;
-  border-top-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-}
-.noCard .text-card {
-  list-style: none;
-  width: 60%;
-}
-.noCard .text-subtitle {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0;
-  color: #000033;
-}
-.noCard .text-comments {
-  font-style: italic;
-  margin: 0.2rem 0rem;
-}
-.noCard .text-tasks {
-  list-style: square;
 }
 @keyframes hide {
   from {
@@ -89,29 +67,13 @@
     transform: translateX(0%);
   }
 }
-
-.card {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 1px 1px 6px #cccccc;
-  border-radius: 0.4rem;
-  animation: forwards;
-  animation-name: "show";
-  animation-duration: 0.8s;
-  display: flex;
-  background-color: rgba(116, 170, 245, 0.95);
-  cursor: pointer;
-}
 .card img {
   scale: 0.8;
-  border-top-right-radius: 10%;
-  border-bottom-left-radius: 10%;
 }
 .card .text-card {
   list-style: none;
   width: 60%;
+  padding: 0 0 1rem 0;
 }
 .card .text-subtitle {
   font-size: 1.2rem;
@@ -123,8 +85,25 @@
   font-style: italic;
   margin: 0.2rem 0rem;
 }
-.card .text-tasks {
+.card .text-tasks-puce {
   list-style: square;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+}
+.card .text-tasks {
+  list-style: inside disc;
+}
+
+.noCard {
+  animation: forwards;
+  animation-name: "hide";
+  animation-duration: 0.8s;
+  background-color: #c6dafc;
+  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 @keyframes hide {
   from {
@@ -140,5 +119,174 @@
   }
   to {
     transform: translateX(0%);
+  }
+}
+.noCard img {
+  scale: 0.8;
+}
+.noCard .text-card {
+  list-style: none;
+  width: 60%;
+  padding: 0 0 1rem 0;
+}
+.noCard .text-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #000033;
+}
+.noCard .text-comments {
+  font-style: italic;
+  margin: 0.2rem 0rem;
+}
+.noCard .text-tasks-puce {
+  list-style: square;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+}
+.noCard .text-tasks {
+  list-style: inside disc;
+}
+
+@media screen and (max-width: 500px) {
+  .btn-container {
+    margin-top: 5rem;
+  }
+  .btn-container .btn-box {
+    align-items: first baseline;
+  }
+  .btn-container .btn-img {
+    scale: 0.2;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+    transition-property: opacity;
+  }
+  .btn-container .btn-img:hover {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .btn-container .btn-label {
+    width: 90px;
+    height: 40px;
+    margin: 100% auto 0;
+    color: #c2770e;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 72%;
+  }
+  .page-container {
+    margin: auto;
+    padding: 0;
+    background-color: #eeeeff;
+    width: 100vw;
+    height: 100vh;
+  }
+  .card {
+    animation: forwards;
+    animation-name: "show";
+    animation-duration: 0.8s;
+    background-color: #c6dafc;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @keyframes hide {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes show {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  .card img {
+    scale: 0.8;
+  }
+  .card .text-card {
+    list-style: none;
+    width: 90%;
+    padding: 0 0 1rem 0.5rem;
+  }
+  .card .text-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #000033;
+  }
+  .card .text-comments {
+    font-style: italic;
+    margin: 0.2rem 0rem;
+  }
+  .card .text-tasks-puce {
+    list-style: square;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+  }
+  .card .text-tasks {
+    list-style: inside disc;
+  }
+  .noCard {
+    animation: forwards;
+    animation-name: "hide";
+    animation-duration: 0.8s;
+    background-color: #c6dafc;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @keyframes hide {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes show {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  .noCard img {
+    scale: 0.8;
+  }
+  .noCard .text-card {
+    list-style: none;
+    width: 90%;
+    padding: 0 0 1rem 0.5rem;
+  }
+  .noCard .text-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #000033;
+  }
+  .noCard .text-comments {
+    font-style: italic;
+    margin: 0.2rem 0rem;
+  }
+  .noCard .text-tasks-puce {
+    list-style: square;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+  }
+  .noCard .text-tasks {
+    list-style: inside disc;
   }
 }/*# sourceMappingURL=body.css.map */

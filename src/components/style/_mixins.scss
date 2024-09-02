@@ -1,18 +1,18 @@
-@mixin card-form{
+@import "../style/variables";
+@mixin form-card($w,$pl){
+  background-color: $light;
+  cursor: pointer;
   width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 1px 1px 6px $greyLight;
-  border-radius: 0.4rem;
   img{
     scale: 0.8;
-    border-top-right-radius: 10%;
-    border-bottom-left-radius: 10%;
   }
   .text-card{
     list-style: none;
-    width: 60%;
+    width: $w;
+    padding: 0 0 1rem $pl;
   }
   .text-subtitle{
     font-size: 1.2rem;
@@ -24,10 +24,16 @@
     font-style: italic;
     margin: 0.2rem 0rem;
   }
-  .text-tasks{
+  .text-tasks-puce{
     list-style: square;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+  }
+  .text-tasks{
+    list-style: inside disc;
   }
 }
+
 @mixin animate-card ($s){
   animation:forwards;
   animation-name: $s;
@@ -47,8 +53,7 @@
     to{
       transform: translateX(0%);
     }
-    
   }
-
-
 }
+
+
