@@ -1,0 +1,37 @@
+@import "../style/variables";
+@import "../style//mixins";
+.banner-box{
+  position: relative;
+  width: 100%;
+}
+
+
+.banner-background{
+  display: block;
+}
+  
+
+.img-background{
+  width: 100%;
+  opacity: 1;
+} 
+.banner-titre{
+  @include banner-format(0, 0, 2rem, 1rem, 2rem, 4rem, 4rem, 6rem, courgette, 8rem, blue, $secondary_06);
+}
+.banner-comment{
+  //      banner-format($m, $pt, $pr, $pb, $pl,  $top, $lft,  $fs,     $ff,      $lh,  $c,     $bgc)
+  @include banner-format(0, 0, 2rem, 1rem, 2rem, 16rem, 4rem, 1.2rem, sans-serif, 2rem, blue, $_secondary_06);
+
+}
+
+.banner-title{
+  color: black;
+  padding: 0 0 0 2rem;
+  margin-bottom: 0;
+  font-weight: 550;
+}
+.banner-text{
+  color: black;
+  padding: 0 0 0 3rem;
+  margin-top: 0;
+}

@@ -1,6 +1,7 @@
 import "./body.css";
 import text_french from "../../assets/text_french.json";
 import menu_prestations from "../../assets/menu_prestations.json";
+import Banner from "../Banner/banner";
 import imgNew from "../../assets/pict_new.jpg";
 import imgExist from "../../assets/pict_exist.jpg";
 import imgFix from "../../assets/pict-fix.jpg";
@@ -26,6 +27,7 @@ function PageHome() {
   }
   return(
     <>
+    <Banner />
     <section className="btn-container">
       {menu_prestations && menu_prestations.map((el,index)=>{
         return(

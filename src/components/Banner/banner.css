@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "courgette";
+  src: local("courgette"), url("../../assets/fonts/Courgette-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "courgette";
+  src: local("courgette"), url("../../assets/fonts/Courgette-Regular.ttf") format("truetype");
+}
+.banner-box {
+  position: relative;
+  width: 100%;
+}
+
+.banner-background {
+  display: block;
+}
+
+.img-background {
+  width: 100%;
+  opacity: 1;
+}
+
+.banner-titre {
+  position: absolute;
+  margin: 0;
+  padding: 0 2rem 1rem 2rem;
+  top: 4rem;
+  left: 4rem;
+  font-size: 6rem;
+  font-family: courgette;
+  line-height: 8rem;
+  color: blue;
+  background-color: rgba(116, 170, 245, 0.6);
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px #555555;
+}
+
+.banner-comment {
+  position: absolute;
+  margin: 0;
+  padding: 0 2rem 1rem 2rem;
+  top: 16rem;
+  left: 4rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  line-height: 2rem;
+  color: blue;
+  background-color: rgba(245, 183, 116, 0.8);
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px #555555;
+}
+
+.banner-title {
+  color: black;
+  padding: 0 0 0 2rem;
+  margin-bottom: 0;
+  font-weight: 550;
+}
+
+.banner-text {
+  color: black;
+  padding: 0 0 0 3rem;
+  margin-top: 0;
+}/*# sourceMappingURL=banner.css.map */

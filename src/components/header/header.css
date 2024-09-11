@@ -1,5 +1,9 @@
+@font-face {
+  font-family: "courgette";
+  src: local("courgette"), url("../../assets/fonts/Courgette-Regular.ttf") format("truetype");
+}
 .header-container {
-  position: fixed;
+  position: sticky;
   z-index: 10;
   top: -1px;
   display: flex;

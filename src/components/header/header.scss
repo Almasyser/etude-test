@@ -1,6 +1,6 @@
 @import "../style/variables";
 .header-container{
-  position: fixed;
+  position: sticky;
   z-index: 10;
   top: -1px;
   display: flex;

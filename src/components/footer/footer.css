@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "courgette";
+  src: local("courgette"), url("../../assets/fonts/Courgette-Regular.ttf") format("truetype");
+}
 .footer-container {
   z-index: 11;
   margin: 0;

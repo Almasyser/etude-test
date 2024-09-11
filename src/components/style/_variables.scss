@@ -25,4 +25,8 @@ $alertSoft: #ffcc50;
 $alertLight: #ffff89;
 
 $_secondary_06: rgba(245,183,116,0.8);
-$secondary_06: rgba(116,170,245,0.95);
+$secondary_06: rgba(116,170,245,0.6);
+@font-face {
+  font-family: 'courgette';
+  src: local('courgette'), url("../../assets/fonts/Courgette-Regular.ttf") format('truetype');
+}
