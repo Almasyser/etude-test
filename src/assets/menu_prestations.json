@@ -2,6 +2,6 @@
   {"name": "/logos/logo_rond_home_batir.png", "dot": null, "label":"Installation nouvelle"},
   {"name": "/logos/logo_rond_home_blue.png", "dot": null, "label":"Installation existante"},
   {"name": "/logos/logo_rond_light_blue.png", "dot": null, "label":"Dépannage"},
-  {"name": "/logos/logo_rond_metrix_blue.png", "dot": null, "label":"Audit"},
-  {"name": "/logos/logo_rond_danger.png", "dot": null, "label":"Maintenance"}
+  {"name": "/logos/logo_fix.png", "dot": null, "label":"Audit"},
+  {"name": "/logos/logo_maint.png", "dot": null, "label":"Maintenance"}
 ]
