@@ -2,6 +2,14 @@
   font-family: "courgette";
   src: local("courgette"), url("../../assets/fonts/Courgette-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "barlow";
+  src: url("../../assets/fonts/Barlow-Regular.ttf");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("../../assets/fonts/Ubuntu-Regular.ttf");
+}
 .footer-container {
   z-index: 11;
   margin: 0;

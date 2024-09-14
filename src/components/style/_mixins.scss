@@ -56,7 +56,6 @@
   }
 }
 @mixin banner-format($m, $pt, $pr, $pb, $pl, $top, $lft, $fs, $ff, $lh, $c, $bgc){
-  position: absolute;
   margin: $m; 
   padding: $pt $pr $pb $pl; 
   top: $top;
@@ -66,8 +65,8 @@
   line-height: $lh;
   color: $c;
   background-color: $bgc;
-  border-radius: 20px;
-  box-shadow: 1px 1px 30px $grey;
+  // border-radius: 20px;
+  // box-shadow: 1px 1px 30px $grey;
 }
 
 

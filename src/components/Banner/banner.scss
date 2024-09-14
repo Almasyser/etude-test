@@ -1,37 +1,75 @@
 @import "../style/variables";
 @import "../style//mixins";
 .banner-box{
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
-
-
 .banner-background{
-  display: block;
+  background-color: $light;
+  display: none;
 }
-  
-
 .img-background{
   width: 100%;
-  opacity: 1;
+  background-size: cover;
+  opacity: 0.8;
+  display: none;
 } 
 .banner-titre{
-  @include banner-format(0, 0, 2rem, 1rem, 2rem, 4rem, 4rem, 6rem, courgette, 8rem, blue, $secondary_06);
+  @include banner-format(0, 0, 0, 0, 2rem, 4rem, 4rem, 4rem, courgette, 8rem,$_primary, transparent);
 }
-.banner-comment{
-  //      banner-format($m, $pt, $pr, $pb, $pl,  $top, $lft,  $fs,     $ff,      $lh,  $c,     $bgc)
-  @include banner-format(0, 0, 2rem, 1rem, 2rem, 16rem, 4rem, 1.2rem, sans-serif, 2rem, blue, $_secondary_06);
-
+.banner-texte{
+  width: 100%;
+  height: fit-content;
+  margin: 0 2rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
-
-.banner-title{
-  color: black;
-  padding: 0 0 0 2rem;
+.introduction{
+  width: 100%;
+  color: $dark;
+  padding: 1rem 0 1rem 1rem;
+  font-family: barlow;
+  font-size: 1.1rem;
+  font-weight: 510;
+  box-shadow: 1px 1px 8px $greyMedium;
+  border-radius: 1.2rem;
+}
+.services-box{
+  max-width: 50%;
+  box-shadow: 1px 1px 8px $greyMedium;
+  border-radius: 1.2rem;
+}
+.soustitre{
+  color: $dark;
+  padding-left: 1rem;
+  font-family: ubuntu;
+  font-size: 1.2rem;
   margin-bottom: 0;
-  font-weight: 550;
 }
-.banner-text{
-  color: black;
-  padding: 0 0 0 3rem;
-  margin-top: 0;
+.services-ul{
+  padding: 0 0 1rem 2rem;
+  margin-top: 0.5rem;
+  li{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: $dark;
+    
+  }
+  strong{
+    font-weight: 505;
+    color: $_dark;
+  }
+  
+}
+.conclusion{
+  width: 100%;
+  color: $dark;
+  padding: 1rem 0 1rem 1rem;
+  font-family: barlow-regular;
+  font-size: 1.2rem;
+  font-weight: 510;
+  box-shadow: 1px 1px 8px $greyMedium;
+  border-radius: 1.2rem;
 }

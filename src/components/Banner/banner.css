@@ -3,62 +3,110 @@
   src: local("courgette"), url("../../assets/fonts/Courgette-Regular.ttf") format("truetype");
 }
 @font-face {
+  font-family: "barlow";
+  src: url("../../assets/fonts/Barlow-Regular.ttf");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("../../assets/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
   font-family: "courgette";
   src: local("courgette"), url("../../assets/fonts/Courgette-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "barlow";
+  src: url("../../assets/fonts/Barlow-Regular.ttf");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("../../assets/fonts/Ubuntu-Regular.ttf");
+}
 .banner-box {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .banner-background {
-  display: block;
+  background-color: #c6dafc;
+  display: none;
 }
 
 .img-background {
   width: 100%;
-  opacity: 1;
+  background-size: cover;
+  opacity: 0.8;
+  display: none;
 }
 
 .banner-titre {
-  position: absolute;
   margin: 0;
-  padding: 0 2rem 1rem 2rem;
+  padding: 0 0 0 2rem;
   top: 4rem;
   left: 4rem;
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: courgette;
   line-height: 8rem;
-  color: blue;
-  background-color: rgba(116, 170, 245, 0.6);
-  border-radius: 20px;
-  box-shadow: 1px 1px 30px #555555;
+  color: #c2770e;
+  background-color: transparent;
 }
 
-.banner-comment {
-  position: absolute;
-  margin: 0;
-  padding: 0 2rem 1rem 2rem;
-  top: 16rem;
-  left: 4rem;
+.banner-texte {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 2rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.introduction {
+  width: 100%;
+  color: #000033;
+  padding: 1rem 0 1rem 1rem;
+  font-family: barlow;
+  font-size: 1.1rem;
+  font-weight: 510;
+  box-shadow: 1px 1px 8px #aaaaaa;
+  border-radius: 1.2rem;
+}
+
+.services-box {
+  max-width: 50%;
+  box-shadow: 1px 1px 8px #aaaaaa;
+  border-radius: 1.2rem;
+}
+
+.soustitre {
+  color: #000033;
+  padding-left: 1rem;
+  font-family: ubuntu;
   font-size: 1.2rem;
-  font-family: sans-serif;
-  line-height: 2rem;
-  color: blue;
-  background-color: rgba(245, 183, 116, 0.8);
-  border-radius: 20px;
-  box-shadow: 1px 1px 30px #555555;
-}
-
-.banner-title {
-  color: black;
-  padding: 0 0 0 2rem;
   margin-bottom: 0;
-  font-weight: 550;
 }
 
-.banner-text {
-  color: black;
-  padding: 0 0 0 3rem;
-  margin-top: 0;
+.services-ul {
+  padding: 0 0 1rem 2rem;
+  margin-top: 0.5rem;
+}
+.services-ul li {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #000033;
+}
+.services-ul strong {
+  font-weight: 505;
+  color: #333300;
+}
+
+.conclusion {
+  width: 100%;
+  color: #000033;
+  padding: 1rem 0 1rem 1rem;
+  font-family: barlow-regular;
+  font-size: 1.2rem;
+  font-weight: 510;
+  box-shadow: 1px 1px 8px #aaaaaa;
+  border-radius: 1.2rem;
 }/*# sourceMappingURL=banner.css.map */
