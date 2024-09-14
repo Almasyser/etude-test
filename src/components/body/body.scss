@@ -1,7 +1,7 @@
 @import "../style/variables";
 @import "../style//mixins";
+
 .btn-container{
- 
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -10,7 +10,6 @@
   .btn-box{
     display: flex;
     justify-content: center;
-
   }
   .btn-img{
     scale: 0.8;
@@ -45,29 +44,33 @@
 
 .card{
   @include animate-card("show");
-  @include form-card(60%, 0);
+  @include form-card(60%, 0, 0.8);
 }
 .noCard{
   @include animate-card("hide");
-  @include form-card(60%, 0);
+  @include form-card(60%, 0, 0.8);
 }
 
 
 @media screen and (max-width: 500px){
   .btn-container{
-    margin-top: 5rem;
+    width: 450px;
+    position: relative;
+    left: 0rem;
+    margin-top: 2rem;
+    justify-content: space-around;
     .btn-box{
-      align-items:first baseline;
+      align-items: center;
+      &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+      }
     }
     .btn-img{
       scale: 0.2;
       transition-timing-function: ease-in-out;
       transition-duration: 0.4s;
       transition-property: opacity;
-      &:hover{
-        opacity: 0.3;
-        cursor: pointer;
-      }
     }
     .btn-label{
       width: 90px;
@@ -78,10 +81,11 @@
       font-size: 0.8rem;
       font-weight: 600;
       text-align: center;
-      padding-top: 72%;
+      padding-top: 0.6rem;
     }
   }
   .page-container{
+    
     margin: auto; 
     padding: 0;
     background-color: $extraLight;
@@ -89,12 +93,16 @@
     height: 100vh;
   }
   .card{
+    position: relative;
+    top: -2rem;
     @include animate-card("show");
-    @include form-card(90%, 0.5rem);
+    @include form-card(90%, 0.5rem , 0.4);
   }
   .noCard{
+    position: relative;
+    top: -2rem;
     @include animate-card("hide");
-    @include form-card(90%, 0.5rem);
+    @include form-card(90%, 0.5rem, 0.4);
   }
 }
   

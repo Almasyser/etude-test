@@ -71,7 +71,7 @@
   background-color: #c6dafc;
   cursor: pointer;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -125,7 +125,7 @@
   background-color: #c6dafc;
   cursor: pointer;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -174,20 +174,24 @@
 
 @media screen and (max-width: 500px) {
   .btn-container {
-    margin-top: 5rem;
+    width: 450px;
+    position: relative;
+    left: 0rem;
+    margin-top: 2rem;
+    justify-content: space-around;
   }
   .btn-container .btn-box {
-    align-items: first baseline;
+    align-items: center;
+  }
+  .btn-container .btn-box:hover {
+    opacity: 0.8;
+    cursor: pointer;
   }
   .btn-container .btn-img {
     scale: 0.2;
     transition-timing-function: ease-in-out;
     transition-duration: 0.4s;
     transition-property: opacity;
-  }
-  .btn-container .btn-img:hover {
-    opacity: 0.3;
-    cursor: pointer;
   }
   .btn-container .btn-label {
     width: 90px;
@@ -198,7 +202,7 @@
     font-size: 0.8rem;
     font-weight: 600;
     text-align: center;
-    padding-top: 72%;
+    padding-top: 0.6rem;
   }
   .page-container {
     margin: auto;
@@ -208,13 +212,15 @@
     height: 100vh;
   }
   .card {
+    position: relative;
+    top: -2rem;
     animation: forwards;
     animation-name: "show";
     animation-duration: 0.8s;
     background-color: #c6dafc;
     cursor: pointer;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -235,7 +241,7 @@
     }
   }
   .card img {
-    scale: 0.8;
+    scale: 0.4;
   }
   .card .text-card {
     list-style: none;
@@ -261,13 +267,15 @@
     list-style: inside disc;
   }
   .noCard {
+    position: relative;
+    top: -2rem;
     animation: forwards;
     animation-name: "hide";
     animation-duration: 0.8s;
     background-color: #c6dafc;
     cursor: pointer;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -288,7 +296,7 @@
     }
   }
   .noCard img {
-    scale: 0.8;
+    scale: 0.4;
   }
   .noCard .text-card {
     list-style: none;

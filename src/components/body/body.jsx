@@ -1,4 +1,5 @@
 import "./body.css";
+import 'simplebar-react/dist/simplebar.min.css';
 import text_french from "../../assets/text_french.json";
 import menu_prestations from "../../assets/menu_prestations.json";
 import Banner from "../Banner/banner";
@@ -8,7 +9,13 @@ import imgFix from "../../assets/pict-fix.jpg";
 import imgAudit from "../../assets/pict-audit.jpg";
 import imgMaint from "../../assets/pict-maint.jpg";
 import { useState } from "react";
+import SimpleBar from "simplebar-react";
+
 function PageHome() {
+  const barStyle = {
+    maxHeight:'100vh',
+      
+  }
   const [dot,setDot] = useState(null);
   const [visible, setVisible] = useState(false);
   const array = [
@@ -26,14 +33,14 @@ function PageHome() {
     setVisible(false);
   }
   return(
-    <>
+    <SimpleBar style={barStyle} className="simplebar-scrollbar">
     <Banner />
     <section className="btn-container">
       {menu_prestations && menu_prestations.map((el,index)=>{
         return(
           <span key={index} className="btn-box">
-            <img className="btn-img" src={el.name} alt="##" onClick={()=> handleShow(index+1)}/>
-            <p className="btn-label">{el.label}</p>
+            <img className="btn-img" id="btnImg" src={el.name} alt="##" onClick={()=> handleShow(index+1)}/>
+            <p htmlFor="btnImg" className="btn-label">{el.label}</p>
           </span>
         )
       }
@@ -60,7 +67,7 @@ function PageHome() {
       }
     </span>
     </section>
-    </>
+    </SimpleBar>
   )
 }
 export default PageHome;

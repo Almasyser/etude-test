@@ -1,13 +1,14 @@
 @import "../style/variables";
-@mixin form-card($w,$pl){
+@mixin form-card($w,$pl,$scale){
   background-color: $light;
   cursor: pointer;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  
   img{
-    scale: 0.8;
+    scale: $scale;
   }
   .text-card{
     list-style: none;

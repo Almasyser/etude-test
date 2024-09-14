@@ -11,7 +11,9 @@
   src: url("../../assets/fonts/Ubuntu-Regular.ttf");
 }
 .footer-container {
+  position: fixed;
   z-index: 11;
+  bottom: 0;
   margin: 0;
   padding: 0;
   display: flex;
