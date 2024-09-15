@@ -1,5 +1,5 @@
 @import "../style/variables";
-@mixin form-card($w,$pl,$scale){
+@mixin form-card($w,$pl,$scale,$fs,$fw){
   background-color: $light;
   cursor: pointer;
   width: 100%;
@@ -9,6 +9,8 @@
   
   img{
     scale: $scale;
+    position: relative;
+    top: -4rem;
   }
   .text-card{
     list-style: none;
@@ -16,22 +18,27 @@
     padding: 0 0 1rem $pl;
   }
   .text-subtitle{
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: $fs;
+    font-weight: var($fw+100);
     margin-bottom: 0;
     color: $dark;
   }
   .text-comments{
+    font-size: $fs;
     font-style: italic;
     margin: 0.2rem 0rem;
   }
   .text-tasks-puce{
+    font-size: $fs;
     list-style: square;
     font-weight: normal;
-    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+  
   }
   .text-tasks{
-    list-style: inside disc;
+    font-size: $fs;
+    // list-style: inside disc;
+    
   }
 }
 
