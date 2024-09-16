@@ -1,16 +1,22 @@
 @import "../style/variables";
-@mixin form-card($w,$pl,$scale,$fs,$fw){
-  background-color: $light;
+@mixin form-card($mobile, $w,$pl,$scale,$fs,$fw){
+  background-color: $_light;
+  // height: 0;
   cursor: pointer;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  
-  img{
-    scale: $scale;
-    position: relative;
-    top: -4rem;
+  align-items: center;
+  @if ($mobile == 1){
+    img{
+      display: none;
+    }
+  } @else {
+    img{
+      scale: $scale;
+      top: -4rem;
+    }
   }
   .text-card{
     list-style: none;
@@ -33,12 +39,10 @@
     list-style: square;
     font-weight: normal;
     margin-left: 1rem;
-  
   }
   .text-tasks{
     font-size: $fs;
     // list-style: inside disc;
-    
   }
 }
 
@@ -49,18 +53,19 @@
   @keyframes hide {
     from{
       transform: translateX(0%);
-    }
+      }
     to{
       transform: translateX(-100%);
-    }
+      opacity: 0;
+      }
   }
   @keyframes show {
     from{
       transform: translateX(-100%);
-    }
+         }
     to{
       transform: translateX(0%);
-    }
+        }
   }
 }
 @mixin banner-format($m, $pt, $pr, $pb, $pl, $top, $lft, $fs, $ff, $lh, $c, $bgc){

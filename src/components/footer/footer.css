@@ -21,14 +21,14 @@
   align-items: center;
   background-color: #eeeeff;
   width: 100vw;
-  height: 10vh;
+  height: 6vh;
 }
 
 .icons-container {
   display: flex;
   justify-content: space-around;
   width: 24vw;
-  height: 8vh;
+  height: 4vh;
 }
 .icons-container a {
   color: #0e59c2;

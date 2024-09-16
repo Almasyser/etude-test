@@ -1,19 +1,13 @@
-import "./body.css";
-import 'simplebar-react/dist/simplebar.min.css';
 import Banner from "../Banner/banner";
 import Carrousel from "../carrousel/Carrousel";
-import SimpleBar from "simplebar-react";
+import "./body.css";
 
-function PageHome() {
-  const barStyle = {
-    maxHeight:'100vh',
-      
-  }
+function Body () {
   return(
-    <SimpleBar style={barStyle} className="simplebar-scrollbar">
+    <section className="body-box">
       <Banner />
       <Carrousel />
-    </SimpleBar>
+    </section>
   )
 }
-export default PageHome;
+export default Body;

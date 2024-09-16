@@ -1,5 +1,7 @@
-
- 
-
-  
-
+.body-box{
+  // position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}

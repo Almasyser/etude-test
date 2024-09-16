@@ -1,13 +1,16 @@
 @import "../style/variables";
 @import "../style//mixins";
 .carrousel-container{
-  margin-bottom: 10rem;
+  position: relative;
+    
 }
 .btn-container{
+  position: absolute;
+  z-index: 1;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 0.1vh;
+  height: 100%;
   margin-top: 0rem;
   .btn-box{
     display: flex;
@@ -38,7 +41,8 @@
   }
 }
 .page-container{
-  margin: auto; 
+  position: absolute;
+  margin: 0 auto; 
   padding: 0;
   background-color: $extraLight;
   width: 100vw;
@@ -47,18 +51,19 @@
 
 .card{
   @include animate-card("show");
-  @include form-card(60%, 0, 0.8, 1.2rem, 600);
+  @include form-card(0, 60%, 0, 0.8, 1.2rem, 600);
 }
 .noCard{
   @include animate-card("hide");
-  @include form-card(60%, 0, 0.8, 1.2rem, 600);
+  @include form-card(1, 60%, 0, 0.8, 1.2rem, 600);
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
   .btn-container{
+    z-index: 1;
     width: 100%;
-    position: relative;
+    position: absolute;
     margin: 2rem 0;
     justify-content: center;
     &:hover{
@@ -87,23 +92,27 @@
     }
   }
   .page-container{
-    
+    position: relative;
     margin: auto; 
     padding: 0;
-    background-color: $extraLight;
-    width: 100vw;
-    height: 100vh;
+    background-color: transparent;
+    width: 100%;
+    height: 12vh;
   }
   .card{
+    z-index: 2;
     position: absolute;
-    bottom: 0;
+    top: 0;
+    // bottom: 0;
     @include animate-card("show");
-    @include form-card(90%, 0.5rem , 0.4, 0.8rem, 500);
+    @include form-card(1, 90%, 0.5rem , 0.4, 0.8rem, 500);
   }
   .noCard{
+    z-index: 0;
     position: absolute;
-    bottom: 0;
+    top: 0;
+    // bottom: 0;
     @include animate-card("hide");
-    @include form-card(90%, 0.5rem, 0.4, 0.8rem, 500);
+    @include form-card(1, 90%, 0.5rem, 0.4, 0.8rem, 500);
   }
 }

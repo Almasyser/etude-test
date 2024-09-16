@@ -22,12 +22,6 @@
   font-family: "ubuntu";
   src: url("../../assets/fonts/Ubuntu-Regular.ttf");
 }
-.banner-box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .banner-background {
   background-color: #c6dafc;
   display: none;

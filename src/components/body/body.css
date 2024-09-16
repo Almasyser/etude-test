@@ -1,1 +1,6 @@
-/*# sourceMappingURL=body.css.map */
+.body-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}/*# sourceMappingURL=body.css.map */
