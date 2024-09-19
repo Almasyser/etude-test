@@ -1,0 +1,13 @@
+@import "../style/variables";
+@import "../style//mixins";
+.entete-container{
+  display: flex;
+  justify-content: space-between;
+}
+.img-entete{
+  width: 160px;
+  padding: 2rem 0 0 2rem;
+}
+.banner-titre{
+  @include banner-format(0, 0, 2rem, 0, 0, 4rem, 4rem, 4rem, courgette, 8rem,$_primary, transparent);
+}

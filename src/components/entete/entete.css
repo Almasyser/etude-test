@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "courgette";
+  src: local("courgette"), url("../../assets/fonts/Courgette-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "barlow";
+  src: url("../../assets/fonts/Barlow-Regular.ttf");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("../../assets/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "courgette";
+  src: local("courgette"), url("../../assets/fonts/Courgette-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "barlow";
+  src: url("../../assets/fonts/Barlow-Regular.ttf");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("../../assets/fonts/Ubuntu-Regular.ttf");
+}
+.entete-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-entete {
+  width: 160px;
+  padding: 2rem 0 0 2rem;
+}
+
+.banner-titre {
+  margin: 0;
+  padding: 0 2rem 0 0;
+  top: 4rem;
+  left: 4rem;
+  font-size: 4rem;
+  font-family: courgette;
+  line-height: 8rem;
+  color: #c2770e;
+  background-color: transparent;
+}/*# sourceMappingURL=entete.css.map */

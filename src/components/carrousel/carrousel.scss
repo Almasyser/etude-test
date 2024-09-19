@@ -2,7 +2,6 @@
 @import "../style//mixins";
 .carrousel-container{
   position: relative;
-    
 }
 .btn-container{
   position: absolute;
@@ -15,18 +14,17 @@
   .btn-box{
     display: flex;
     justify-content: center;
-    
-  }
-  .btn-img{
-    scale: 0.8;
-    position: absolute;
-    opacity: 0.5;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.4s;
-    transition-property: opacity;
     &:hover{
-      opacity: 0.3;
+      opacity: 0.8;
       cursor: pointer;
+    }
+    .btn-img{
+      scale: 0.8;
+      position: absolute;
+      opacity: 0.5;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.4s;
+      transition-property: opacity;
     }
   }
   .btn-label{
@@ -40,6 +38,12 @@
     text-align: center;
   }
 }
+
+.btn-container-none{
+  display: none;
+}
+
+
 .page-container{
   position: absolute;
   margin: 0 auto; 
@@ -50,34 +54,37 @@
 }
 
 .card{
+  @include form-card( 0, 60%, 0, 0.8, 1.2rem, 600);
   @include animate-card("show");
-  @include form-card(0, 60%, 0, 0.8, 1.2rem, 600);
 }
+
 .noCard{
+  @include form-card( 1, 60%, 0, 0.8, 1.2rem, 600);
   @include animate-card("hide");
-  @include form-card(1, 60%, 0, 0.8, 1.2rem, 600);
 }
 
 
 @media screen and (max-width: 480px){
   .btn-container{
-    z-index: 1;
-    width: 100%;
-    position: absolute;
-    margin: 2rem 0;
-    justify-content: center;
-    &:hover{
-      opacity: 0.8;
-      cursor: pointer;
-    }
+    // z-index: 1;
+    width: 50%;
+    height: 8vh;
+    // position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content:space-between;
     .btn-box{
+      display: flex;
       align-items: center;
-    }
-    .btn-img{
-      scale: 0.15;
-      transition-timing-function: ease-in-out;
-      transition-duration: 0.4s;
-      transition-property: opacity;
+      .btn-img{
+        scale: 0.15;
+        position: absolute;
+        opacity: 0.5;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.4s;
+        transition-property: opacity;
+
+      }
     }
     .btn-label{
       width: 72px;
@@ -100,10 +107,8 @@
     height: 12vh;
   }
   .card{
-    z-index: 2;
     position: absolute;
     top: 0;
-    // bottom: 0;
     @include animate-card("show");
     @include form-card(1, 90%, 0.5rem , 0.4, 0.8rem, 500);
   }
@@ -111,7 +116,6 @@
     z-index: 0;
     position: absolute;
     top: 0;
-    // bottom: 0;
     @include animate-card("hide");
     @include form-card(1, 90%, 0.5rem, 0.4, 0.8rem, 500);
   }

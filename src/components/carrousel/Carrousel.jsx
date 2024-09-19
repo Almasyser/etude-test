@@ -9,8 +9,10 @@ import { useState } from "react";
 import "./carrousel.css";
 // import { DiSnapSvg } from "react-icons/di";
 function Carrousel (){
+
   const [dot,setDot] = useState(null);
   const [visible, setVisible] = useState(false);
+  const [btnVisible, setBtnVisible] = useState(true);
   const array = [
     imgNew,
     imgExist,
@@ -21,14 +23,17 @@ function Carrousel (){
   const handleShow = (e) =>{
     setDot(e);
     setVisible(true);
+    setBtnVisible(false);
+
   }
   const handleHide =()=>{
     setVisible(false);
+    setBtnVisible(true);
   }
 
   return(
     <div className="carrousel-container">
-      <section className="btn-container">
+      <section className={btnVisible? "btn-container":"btn-container-none"} >
         {menu_prestations && menu_prestations.map((el,index)=>{
           return(
             <span key={index} className="btn-box">
@@ -39,8 +44,8 @@ function Carrousel (){
         }
       )}
       </section>
-      <section className="page-container">
-        <span className={visible? "card":"noCard"} onClick={handleHide}>
+      <section className="page-container" >
+        <span className={visible? "card":"noCard"} onClick={handleHide} >
         {dot && 
           <>
             <img src={array[text_french[dot].picture]} alt="##" />

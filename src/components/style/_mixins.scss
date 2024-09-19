@@ -1,6 +1,8 @@
 @import "../style/variables";
-@mixin form-card($mobile, $w,$pl,$scale,$fs,$fw){
-  background-color: $_light;
+ 
+@mixin form-card( $mobile, $w,$pl,$scale,$fs,$fw){
+  background-color: $secondary_06;
+  z-index: 3;
   // height: 0;
   cursor: pointer;
   width: 100%;
@@ -50,6 +52,7 @@
   animation:forwards;
   animation-name: $s;
   animation-duration: 0.8s;
+
   @keyframes hide {
     from{
       transform: translateX(0%);
@@ -62,10 +65,11 @@
   @keyframes show {
     from{
       transform: translateX(-100%);
-         }
+      }
     to{
       transform: translateX(0%);
-        }
+      opacity: 1;
+      }
   }
 }
 @mixin banner-format($m, $pt, $pr, $pb, $pl, $top, $lft, $fs, $ff, $lh, $c, $bgc){

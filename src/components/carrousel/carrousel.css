@@ -39,17 +39,17 @@
   display: flex;
   justify-content: center;
 }
-.btn-container .btn-img {
+.btn-container .btn-box:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.btn-container .btn-box .btn-img {
   scale: 0.8;
   position: absolute;
   opacity: 0.5;
   transition-timing-function: ease-in-out;
   transition-duration: 0.4s;
   transition-property: opacity;
-}
-.btn-container .btn-img:hover {
-  opacity: 0.3;
-  cursor: pointer;
 }
 .btn-container .btn-label {
   width: 180px;
@@ -62,6 +62,10 @@
   text-align: center;
 }
 
+.btn-container-none {
+  display: none;
+}
+
 .page-container {
   position: absolute;
   margin: 0 auto;
@@ -72,33 +76,17 @@
 }
 
 .card {
-  animation: forwards;
-  animation-name: "show";
-  animation-duration: 0.8s;
-  background-color: #fce8c6;
+  background-color: rgba(116, 170, 245, 0.6);
+  z-index: 3;
   cursor: pointer;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-@keyframes hide {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-}
-@keyframes show {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
+  animation: forwards;
+  animation-name: "show";
+  animation-duration: 0.8s;
 }
 .card img {
   scale: 0.8;
@@ -129,19 +117,6 @@
 .card .text-tasks {
   font-size: 1.2rem;
 }
-
-.noCard {
-  animation: forwards;
-  animation-name: "hide";
-  animation-duration: 0.8s;
-  background-color: #fce8c6;
-  cursor: pointer;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
 @keyframes hide {
   from {
     transform: translateX(0%);
@@ -157,7 +132,22 @@
   }
   to {
     transform: translateX(0%);
+    opacity: 1;
   }
+}
+
+.noCard {
+  background-color: rgba(116, 170, 245, 0.6);
+  z-index: 3;
+  cursor: pointer;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  animation: forwards;
+  animation-name: "hide";
+  animation-duration: 0.8s;
 }
 .noCard img {
   display: none;
@@ -187,24 +177,41 @@
 .noCard .text-tasks {
   font-size: 1.2rem;
 }
+@keyframes hide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+@keyframes show {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .btn-container {
-    z-index: 1;
-    width: 100%;
-    position: absolute;
-    margin: 2rem 0;
-    justify-content: center;
-  }
-  .btn-container:hover {
-    opacity: 0.8;
-    cursor: pointer;
+    width: 50%;
+    height: 8vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
   }
   .btn-container .btn-box {
+    display: flex;
     align-items: center;
   }
-  .btn-container .btn-img {
+  .btn-container .btn-box .btn-img {
     scale: 0.15;
+    position: absolute;
+    opacity: 0.5;
     transition-timing-function: ease-in-out;
     transition-duration: 0.4s;
     transition-property: opacity;
@@ -229,13 +236,13 @@
     height: 12vh;
   }
   .card {
-    z-index: 2;
     position: absolute;
     top: 0;
     animation: forwards;
     animation-name: "show";
     animation-duration: 0.8s;
-    background-color: #fce8c6;
+    background-color: rgba(116, 170, 245, 0.6);
+    z-index: 3;
     cursor: pointer;
     width: 100%;
     margin: 0 auto;
@@ -258,6 +265,7 @@
     }
     to {
       transform: translateX(0%);
+      opacity: 1;
     }
   }
   .card img {
@@ -295,7 +303,8 @@
     animation: forwards;
     animation-name: "hide";
     animation-duration: 0.8s;
-    background-color: #fce8c6;
+    background-color: rgba(116, 170, 245, 0.6);
+    z-index: 3;
     cursor: pointer;
     width: 100%;
     margin: 0 auto;
@@ -318,6 +327,7 @@
     }
     to {
       transform: translateX(0%);
+      opacity: 1;
     }
   }
   .noCard img {

@@ -22,6 +22,11 @@
   font-family: "ubuntu";
   src: url("../../assets/fonts/Ubuntu-Regular.ttf");
 }
+.banner-box {
+  border: 1px solid red;
+  height: auto;
+}
+
 .banner-background {
   background-color: #c6dafc;
   display: none;
@@ -34,23 +39,11 @@
   display: none;
 }
 
-.banner-titre {
-  margin: 0;
-  padding: 0 0 0 2rem;
-  top: 4rem;
-  left: 4rem;
-  font-size: 4rem;
-  font-family: courgette;
-  line-height: 8rem;
-  color: #c2770e;
-  background-color: transparent;
-}
-
 .banner-texte {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 0 2rem 0 2rem;
+  margin: 0 32px 0 32px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -58,7 +51,7 @@
 .introduction {
   width: 100%;
   color: #000033;
-  padding: 1rem 0 1rem 1rem;
+  padding: 16px 0 16px 16px;
   font-family: barlow;
   font-size: 1.1rem;
   font-weight: 510;
@@ -97,7 +90,7 @@
 .conclusion {
   width: 100%;
   color: #000033;
-  padding: 1rem 0 1rem 1rem;
+  padding: 16px 0 16px 16px;
   font-family: barlow-regular;
   font-size: 1.2rem;
   font-weight: 510;
@@ -112,6 +105,7 @@
   .introduction {
     font-size: 1rem;
     border-radius: 0;
+    margin: 0;
   }
   .services-box {
     display: none;

@@ -10,7 +10,7 @@ console.log(home_background[0].name);
       <span className="banner-background">
         <img className="img-background" src={home_background[0].name} alt={home_background[0].label} />
       </span>
-        <p className="banner-titre">L'artisan électricien</p>
+       
       <span className="banner-texte">
         <p className="introduction">&nbsp;Fort d'une expérience de 42 ans dans le domaine de l'électricité, je vous propose des services complets pour tous vos projets électriques. Que ce soit pour une installation neuve, une rénovation, ou encore un dépannage en urgence, je met mon savoir-faire à votre service pour vous garantir des prestations de qualité.</p>
         <div className="services-box">
